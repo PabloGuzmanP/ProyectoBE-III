@@ -1,4 +1,5 @@
 import Pet from "../dao/Pets.dao.js";
+import { customError } from "../errors/custom.error.js";
 
 export class PetServices {
   constructor() {
@@ -31,5 +32,14 @@ export class PetServices {
   async remove(id) {
     await this.petDao.delete(id);
     return "ok";
+  }
+
+  async resetAdoption(id) {
+    try {
+      const resetPet = await this.petDao.resetAdoption(id);
+      return resetPet;
+    } catch (error) {
+      throw new Error(`Error al resetear la adopción de la mascota: ${error.message}`);
+    }
   }
 }

@@ -38,4 +38,13 @@ export class UserServices {
     const usersDb = await this.userDao.saveMany(users);
     return usersDb;
   }
+
+  async removePetFromUser(userId, petId) {
+    try {
+      const updatedUser = await this.userDao.removePetFromUser(userId, petId);
+      return updatedUser;
+    } catch (error) {
+      throw new Error(`Error al eliminar la mascota del usuario: ${error.message}`);
+    }
+  }
 }

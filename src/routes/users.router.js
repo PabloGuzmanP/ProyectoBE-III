@@ -10,5 +10,6 @@ router.get("/mock", usersController.createUserMock);
 router.get("/:uid", usersController.getUser);
 router.put("/:uid", usersController.updateUser);
 router.delete("/:uid", usersController.deleteUser);
+router.delete("/remove/:uid/:pid", usersController.deletePets);
 
 export default router;

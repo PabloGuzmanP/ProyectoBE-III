@@ -51,4 +51,11 @@ export class UserControllers {
     const result = await this.userServices.remove(userId);
     res.send({ status: "success", message: "User deleted" });
   };
+
+  deletePets = async (req, res) => {
+    const userId = req.params.uid;
+    const petId = req.params.pid;
+    await this.userServices.removePetFromUser(userId, petId);
+    res.send({ status: "success", message: "Pet deleted from user" });
+  }
 }

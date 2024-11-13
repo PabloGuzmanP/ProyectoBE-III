@@ -25,4 +25,17 @@ export default class Users {
     delete = (id) =>{
         return userModel.findByIdAndDelete(id);
     }
+
+    removePetFromUser = async (userId, petId) => {
+        try {
+            const updatedUser = await userModel.findByIdAndUpdate(
+                userId,
+                { $pull: { pets: { _id: petId } } },
+                { new: true }
+            );
+            return updatedUser;
+        } catch (error) {
+            throw new Error(`Error al eliminar el pet: ${error.message}`);
+        }
+    }
 }

@@ -1,4 +1,5 @@
 import Adoption from "../dao/Adoption.js";
+import { customError } from "../errors/custom.error.js";
 
 export class AdoptionServices {
   constructor() {
@@ -26,6 +27,11 @@ export class AdoptionServices {
 
   async remove(id) {
     await this.adoptionDao.delete(id);
+    return "ok";
+  }
+
+  async removeAll(){
+    await this.adoptionDao.deleteAll();
     return "ok";
   }
 }

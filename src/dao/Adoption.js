@@ -7,7 +7,7 @@ export default class Adoption {
     }
 
     getBy = (params) =>{
-        return adoptionModel.findOne(params);
+        return adoptionModel.findById(params);
     }
 
     save = (doc) =>{
@@ -20,5 +20,9 @@ export default class Adoption {
     
     delete = (id) =>{
         return adoptionModel.findByIdAndDelete(id);
+    }
+
+    deleteAll = () => {
+        return adoptionModel.deleteMany({});
     }
 }

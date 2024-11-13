@@ -69,4 +69,14 @@ export class PetsController {
       next(error);
     }
   };
+
+  resetAdoption = async (req, res, next) => {
+    try {
+      const petId = req.params.pid;
+      await this.petService.resetAdoption(petId);
+      res.send({ status: "success", message: "Reset adoption succesful" });
+    } catch (error) {
+      next(error);
+    }
+  };
 }

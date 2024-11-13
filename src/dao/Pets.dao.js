@@ -25,4 +25,13 @@ export default class Pet {
     delete = (id) =>{
         return petModel.findByIdAndDelete(id);
     }
+
+    resetAdoption = (id) => {
+        return petModel.findByIdAndUpdate(id, { 
+            $set: { 
+                owner: null, 
+                adopted: false 
+            }
+        });
+    }
 }

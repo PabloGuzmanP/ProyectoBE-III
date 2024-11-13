@@ -1,1 +1,31 @@
 2024-11-12 19:40:02 [[31merror[39m]: undefined User id 6709a50f3e2f8fc8f24bbda4 not found
+2024-11-12 20:12:37 [[31merror[39m]: undefined usersService is not defined
+2024-11-12 20:14:59 [[31merror[39m]: undefined this.usersService.getUserById is not a function
+2024-11-12 20:20:27 [[31merror[39m]: undefined Parameter "filter" to findOne() must be an object, got "6733fe0cfaeb9e07b21f1c2e" (type string)
+2024-11-12 20:49:39 [[31merror[39m]: _id Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Adoptions"
+2024-11-12 20:50:28 [[31merror[39m]: _id Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Adoptions"
+2024-11-12 20:50:59 [[31merror[39m]: _id Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Adoptions"
+2024-11-12 20:55:16 [[31merror[39m]: _id Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Adoptions"
+2024-11-12 20:58:08 [[31merror[39m]: _id Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Adoptions"
+2024-11-12 20:58:36 [[31merror[39m]: _id Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Adoptions"
+2024-11-12 20:59:24 [[31merror[39m]: _id Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Adoptions"
+2024-11-12 21:00:25 [[31merror[39m]: _id Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Adoptions"
+2024-11-12 21:00:58 [[31merror[39m]: _id Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Adoptions"
+2024-11-12 21:12:06 [[31merror[39m]: _id Cast to ObjectId failed for value "49ff1cf7-90d7-4ff0-ac65-2e778c211897" (type string) at path "_id" for model "Users"
+2024-11-12 21:12:58 [[31merror[39m]: _id Cast to ObjectId failed for value "add1a939-2860-4973-9c0a-6b4578835152" (type string) at path "_id" for model "Users"
+2024-11-12 21:17:22 [[31merror[39m]: undefined User id 67340c325f09b986139273e1 not found
+2024-11-12 21:18:21 [[31merror[39m]: undefined User id 67340c6c7a54d2411d15407c not found
+2024-11-12 21:18:41 [[31merror[39m]: undefined User id 67340c81d152f4c518871096 not found
+2024-11-12 21:18:50 [[31merror[39m]: undefined User id 67340c8a5f05df91e66cdeae not found
+2024-11-12 21:30:38 [[31merror[39m]: _id Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Adoptions"
+2024-11-12 21:31:30 [[31merror[39m]: _id Cast to ObjectId failed for value "undefined" (type string) at path "_id" for model "Adoptions"
+2024-11-13 07:05:29 [[31merror[39m]: undefined customError is not defined
+2024-11-13 07:08:52 [[31merror[39m]: undefined customError is not defined
+2024-11-13 07:09:48 [[31merror[39m]: undefined customError is not defined
+2024-11-13 07:10:08 [[31merror[39m]: undefined customError is not defined
+2024-11-13 07:12:40 [[31merror[39m]: undefined customError is not defined
+2024-11-13 07:14:04 [[31merror[39m]: undefined customError is not defined
+2024-11-13 07:14:08 [[31merror[39m]: undefined customError is not defined
+2024-11-13 07:17:17 [[31merror[39m]: undefined customError is not defined
+2024-11-13 07:17:50 [[31merror[39m]: undefined Pet id [object Object] not found
+2024-11-13 07:22:59 [[31merror[39m]: undefined Error al resetear la adopción de la mascota: this.petDao.resetAdoption is not a function
