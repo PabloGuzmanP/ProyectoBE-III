@@ -1,7 +1,7 @@
 components:
   schemas:
     Users:
-      type: array
+      type: object
       properties:
         _id:
           type: ObjectId
@@ -41,7 +41,7 @@ components:
         password: "hashedpassword123"
         role: user
         pets:
-          _id: "5f7e9f9b5f7e9f9b5f7e9f9b"
+          - _id: "5f7e9f9b5f7e9f9b5f7e9f9b"
 
   requestBody:
     userBody:
@@ -81,4 +81,4 @@ components:
         password: "hashedpassword123"
         role: user
         pets:
-          _id: "5f7e9f9b5f7e9f9b5f7e9f9b"
+          - _id: "5f7e9f9b5f7e9f9b5f7e9f9b"

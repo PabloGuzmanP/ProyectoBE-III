@@ -1,10 +1,17 @@
 paths:
-  /api/{uid}:
+  /api/users/{uid}:
     get:
       summary: Obtener el usuario en base al id
       description: Get user by id
       tags:
         - Users
+      parameters:
+        - in: path
+          name: uid
+          required: true
+          description: Id user
+          schema:
+            type: string
       responses: 
         200:
           description: Retorna un array del usuario por el id

@@ -1,5 +1,5 @@
 paths:
-  /api/{uid}:
+  /api/users/{uid}:
     delete:
       summary: Eliminar usuario
       description: Delete an user

@@ -1,5 +1,5 @@
 paths:
-  /api/:
+  /api/users:
     get:
       summary: Obtener todos los usuarios
       description: Get all users
