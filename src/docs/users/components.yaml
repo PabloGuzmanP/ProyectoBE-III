@@ -1,0 +1,84 @@
+components:
+  schemas:
+    Users:
+      type: array
+      properties:
+        _id:
+          type: ObjectId
+          description: Id del usuario
+        first_name:
+          type: string
+          description: Nombre del usuario
+        last_name:
+          type: string
+          description: Apellido del usuario
+        email:
+          type: string
+          format: email
+          description: Correo electrónico del usuario
+        password:
+          type: string
+          description: Contraseña del usuario
+        role:
+          type: string
+          description: Rol del usuario (e.g., 'user', 'admin')
+          default: user
+        pets:
+          type: array
+          description: Lista de mascotas del usuario
+          items:
+            type: object
+            properties:
+              _id:
+                type: string
+                format: ObjectId
+                description: Id de la mascota
+      example:
+        _id: "5f7e9f9b5f7e9f9b5f7e9f9b"
+        first_name: Juan
+        last_name: Guzman
+        email: juan.guzman@example.com
+        password: "hashedpassword123"
+        role: user
+        pets:
+          _id: "5f7e9f9b5f7e9f9b5f7e9f9b"
+
+  requestBody:
+    userBody:
+      type: object
+      properties:
+        first_name:
+          type: string
+          description: Nombre del usuario
+        last_name:
+          type: string
+          description: Apellido del usuario
+        email:
+          type: string
+          format: email
+          description: Correo electrónico del usuario
+        password:
+          type: string
+          description: Contraseña del usuario
+        role:
+          type: string
+          description: Rol del usuario
+          default: user
+        pets:
+          type: array
+          description: Lista de mascotas del usuario
+          items:
+            type: object
+            properties:
+              _id:
+                type: string
+                format: ObjectId
+                description: Id de la mascota
+      example:
+        first_name: Juan
+        last_name: Guzman
+        email: juan.guzman@example.com
+        password: "hashedpassword123"
+        role: user
+        pets:
+          _id: "5f7e9f9b5f7e9f9b5f7e9f9b"
